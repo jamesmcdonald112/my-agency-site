@@ -10,21 +10,15 @@ export function ContactSection() {
         <div className="mx-auto max-w-4xl">
           <div className="max-w-xl">
             <h2 className="font-display text-3xl font-medium text-balance text-white sm:text-4xl">
-              Tell us about your project
+              Lets's Build Your Growth System Together
             </h2>
             <div className="mt-6 flex">
               <Button href="/contact" invert>
-                Say Hej
+                Start Growing Today
               </Button>
             </div>
-            <div className="mt-10 border-t border-white/10 pt-10">
-              <h3 className="font-display text-base font-semibold text-white">
-                Our offices
-              </h3>
-              <Offices
-                invert
-                className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
-              />
+            <div className="mt-10 border-t border-white/10 pt-10 text-white/50 text-sm">
+              Based in Ireland. Working with ambitious businesses worldwide.
             </div>
           </div>
         </div>

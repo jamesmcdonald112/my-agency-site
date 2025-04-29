@@ -58,24 +58,14 @@ function Discover() {
     <Section title="Discover" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          We work closely with our clients to understand their{' '}
-          <strong className="font-semibold text-neutral-950">needs</strong> and
-          goals, embedding ourselves in their every day operations to understand
-          what makes their business tick.
+          Every great system starts with clarity. In this phase, we take the time to understand what your business does, who your customers are, and where your current digital setup may be holding you back.
         </p>
         <p>
-          Our team of private investigators shadow the company director’s for
-          several weeks while our account managers focus on going through their
-          trash. Our senior security experts then perform social engineering
-          hacks to gain access to their{' '}
-          <strong className="font-semibold text-neutral-950">business</strong>{' '}
-          accounts — handing that information over to our forensic accounting
-          team.
+          We look at your website, ads, social presence and overall online visibility. If something’s costing you money without returning results — we find it. If something is missing that could be bringing in leads — we flag it.
+          We only move forward with projects where we see clear, strong return on investment potential for you — because your growth is our success.
         </p>
         <p>
-          Once the full audit is complete, we report back with a comprehensive{' '}
-          <strong className="font-semibold text-neutral-950">plan</strong> and,
-          more importantly, a budget.
+          Our goal is to make this process as simple and insightful as possible. After a quick discovery call and some light research, you’ll get a clear plan: what we recommend building, why it matters, and how it will help you grow.
         </p>
       </div>
 
@@ -83,12 +73,12 @@ function Discover() {
         Included in this phase
       </h3>
       <TagList className="mt-4">
-        <TagListItem>In-depth questionnaires</TagListItem>
-        <TagListItem>Feasibility studies</TagListItem>
-        <TagListItem>Blood samples</TagListItem>
-        <TagListItem>Employee surveys</TagListItem>
-        <TagListItem>Proofs-of-concept</TagListItem>
-        <TagListItem>Forensic audit</TagListItem>
+        <TagListItem>Discovery call</TagListItem>
+        <TagListItem>Website & ad review</TagListItem>
+        <TagListItem>Customer journey insights</TagListItem>
+        <TagListItem>Lead capture opportunities</TagListItem>
+        <TagListItem>ROI-focused strategy</TagListItem>
+        <TagListItem>Clear project proposal</TagListItem>
       </TagList>
     </Section>
   )
@@ -99,32 +89,20 @@ function Build() {
     <Section title="Build" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Based off of the discovery phase, we develop a comprehensive roadmap
-          for each product and start working towards delivery. The roadmap is an
-          intricately tangled mess of technical nonsense designed to drag the
-          project out as long as possible.
+          Once we have a clear plan, Navensa gets to work building your growth system. We focus on the essentials: upgrading or rebuilding your website for speed, conversion, and clarity, setting up strategic advertising campaigns, and integrating simple, effective automation tools.        </p>
+        <p>
+          You won’t be overwhelmed with endless choices — we guide you through what matters most: capturing leads, nurturing prospects, and turning interest into revenue. Our team handles everything from design and copywriting to technical setup and CRM automation.
         </p>
         <p>
-          Each client is assigned a key account manager to keep lines of
-          communication open and obscure the actual progress of the project.
-          They act as a buffer between the client’s incessant nagging and the
-          development team who are hard at work scouring open source projects
-          for code to re-purpose.
-        </p>
-        <p>
-          Our account managers are trained to only reply to client emails after
-          9pm, several days after the initial email. This reinforces the general
-          aura that we are very busy and dissuades clients from asking for
-          changes.
+          Throughout the build, you’ll have clear communication, milestone updates, and the reassurance that every element is tied back to your ROI goals.
         </p>
       </div>
 
       <Blockquote
-        author={{ name: 'Debra Fiscal', role: 'CEO of Unseal' }}
+        author={{ name: 'James', role: 'Founder of Navensa' }}
         className="mt-12"
       >
-        Studio were so regular with their progress updates we almost began to
-        think they were automated!
+        At Navensa, we believe that clarity, results, and genuine care for our clients' success are the true measures of quality digital systems.
       </Blockquote>
     </Section>
   )
@@ -135,31 +113,13 @@ function Deliver() {
     <Section title="Deliver" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          About halfway through the Build phase, we push each project out by 6
-          weeks due to a change in{' '}
-          <strong className="font-semibold text-neutral-950">
-            requirements
-          </strong>
-          . This allows us to increase the budget a final time before launch.
+          Once your system is fully built, Navensa moves into final validation. We conduct rigorous checks to ensure everything is working smoothly — from your website performance and lead capture flows to your ad tracking and CRM automations.
         </p>
         <p>
-          Despite largely using pre-built components, most of the{' '}
-          <strong className="font-semibold text-neutral-950">progress</strong>{' '}
-          on each project takes place in the final 24 hours. The development
-          time allocated to each client is actually spent making augmented
-          reality demos that go viral on social media.
+          When we’re happy everything is optimised for conversion and reliability, we coordinate your launch. Whether it’s a brand new site or campaign rollout, we ensure it goes live with minimal disruption and maximum impact.
         </p>
         <p>
-          We ensure that the main pages of the site are{' '}
-          <strong className="font-semibold text-neutral-950">
-            fully functional
-          </strong>{' '}
-          at launch — the auxiliary pages will, of course, be lorem ipusm shells
-          which get updated as part of our exorbitant{' '}
-          <strong className="font-semibold text-neutral-950">
-            maintenance
-          </strong>{' '}
-          retainer.
+          After launch, we continue to monitor, refine, and support. Our focus is not just on launching a system — it’s on helping it deliver returns month after month, with transparent reporting and ongoing growth strategies.
         </p>
       </div>
 
@@ -167,17 +127,14 @@ function Deliver() {
         Included in this phase
       </h3>
       <List className="mt-8">
-        <ListItem title="Testing">
-          Our projects always have 100% test coverage, which would be impressive
-          if our tests weren’t as porous as a sieve.
+        <ListItem title="System Validation">
+          Full checks across website, lead flows, ads, and automations.
         </ListItem>
-        <ListItem title="Infrastructure">
-          To ensure reliability we only use the best Digital Ocean droplets that
-          $4 a month can buy.
+        <ListItem title="Launch Management">
+          Seamless deployment with focus on stability and results.
         </ListItem>
-        <ListItem title="Support">
-          Because we hold the API keys for every critical service your business
-          uses, you can expect a lifetime of support, and invoices, from us.
+        <ListItem title="Ongoing Optimisation">
+          Post-launch support, tracking, and continuous improvement.
         </ListItem>
       </List>
     </Section>
@@ -196,42 +153,32 @@ function Values() {
 
       <SectionIntro
         eyebrow="Our values"
-        title="Balancing reliability and innovation"
+        title="Our Commitment to Your Success"
       >
         <p>
-          We strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project we feel comfortable using. We stand by our core values
-          to justify that decision.
+          At Navensa, we blend proven strategies with forward-thinking innovation. Our unwavering focus is on delivering digital systems that drive real business growth — with transparency, precision, and partnership at the heart of everything we do.
         </p>
       </SectionIntro>
 
       <Container className="mt-24">
         <GridList>
           <GridListItem title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
+            Every detail matters. We deliver solutions that are thoughtfully crafted, thoroughly tested, and designed for long-term impact.
           </GridListItem>
           <GridListItem title="Efficient">
-            We pride ourselves on never missing a deadline which is easy because
-            most of the work was done years ago.
+            We work with precision and speed, ensuring that your project moves forward without unnecessary delays or complications.
           </GridListItem>
           <GridListItem title="Adaptable">
-            Every business has unique needs and our greatest challenge is
-            shoe-horning those needs into something we already built.
+            We tailor every project to fit your business, adapting our approach as your needs and opportunities evolve.
           </GridListItem>
           <GridListItem title="Honest">
-            We are transparent about all of our processes, banking on the simple
-            fact our clients never actually read anything.
+            We believe in open, straightforward communication — offering clear advice and realistic expectations at every stage.
           </GridListItem>
           <GridListItem title="Loyal">
-            We foster long-term relationships with our clients that go beyond
-            just delivering a product, allowing us to invoice them for decades.
+            We invest in long-term client partnerships, dedicated to helping your business thrive not just today, but for years to come.
           </GridListItem>
           <GridListItem title="Innovative">
-            The technological landscape is always evolving and so are we. We are
-            constantly on the lookout for new open source projects to clone.
+            We are proactive in exploring new ideas and technologies that deliver meaningful results — never innovation for its own sake.
           </GridListItem>
         </GridList>
       </Container>
@@ -242,7 +189,7 @@ function Values() {
 export const metadata: Metadata = {
   title: 'Our Process',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'Explore how Navensa delivers complete digital systems through a proven three-phase strategy: Discover, Build, and Deliver.',
 }
 
 export default function Process() {
@@ -250,9 +197,7 @@ export default function Process() {
     <>
       <PageIntro eyebrow="Our process" title="How we work">
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          At Navensa, we follow a proven strategy built on clarity, efficiency, and results. Our three-phase process ensures your project is researched, built, and delivered to meet the highest standards.
         </p>
       </PageIntro>
 

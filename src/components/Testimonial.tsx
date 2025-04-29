@@ -11,7 +11,7 @@ export function Testimonial({
   className,
 }: {
   children: React.ReactNode
-  client: { logo: ImageProps['src']; name: string }
+  client: { logo?: ImageProps['src']; name: string }
   className?: string
 }) {
   return (
@@ -33,8 +33,19 @@ export function Testimonial({
                 {children}
               </p>
             </blockquote>
-            <figcaption className="mt-10">
-              <Image src={client.logo} alt={client.name} unoptimized />
+            <figcaption className="mt-10 text-left">
+              {client.logo ? (
+                <Image
+                  src={client.logo}
+                  alt={client.name}
+                  unoptimized
+                  className="mx-auto h-12"
+                />
+              ) : (
+                <span className="block text-lg font-semibold text-neutral-500">
+                  {client.name}
+                </span>
+              )}
             </figcaption>
           </figure>
         </FadeIn>

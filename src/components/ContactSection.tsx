@@ -10,8 +10,11 @@ export function ContactSection() {
         <div className="mx-auto max-w-4xl">
           <div className="max-w-xl">
             <h2 className="font-display text-3xl font-medium text-balance text-white sm:text-4xl">
-              Lets's Build Your Growth System Together
+              Get a Free Quote or Website Audit
             </h2>
+            <p className="mt-4 text-lg text-white/70">
+              No pressure — just a clear roadmap, real pricing, and expert advice based on your goals. We’ll respond within 24 hours.
+            </p>
             <div className="mt-6 flex">
               <Button href="/contact" invert>
                 Start Growing Today
@@ -26,3 +29,4 @@ export function ContactSection() {
     </Container>
   )
 }
+

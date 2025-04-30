@@ -180,11 +180,21 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-7xl">
-            Helping Small Businesses Scale Smarter, Faster, and Stronger.
+            Earn More Money Than You Spend With Us — Or We Won’t Take You On
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            At Navensa, we build growth systems — not just websites. From powerful websites to smart advertising to automation that saves you hours, we help you scale with confidence.
+            <strong>With Navensa, our one goal is to make your business more profitable.</strong><br />
+            We build systems — websites, ads, and automation — that bring more clients, more revenue, and more time to your business.<br />
+            <em>We only take on 3 new clients per month to go deep and deliver real results.</em>
           </p>
+          <div className="mt-8">
+            <Link
+              href="/contact"
+              className="inline-block rounded-lg bg-neutral-950 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-neutral-800"
+            >
+              See If You’re Eligible
+            </Link>
+          </div>
         </FadeIn>
       </Container>
 

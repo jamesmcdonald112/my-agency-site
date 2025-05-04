@@ -269,7 +269,7 @@ function Faq() {
 
 export default function ROICalculatorPage() {
   return (
-    <main className="min-h-screen bg-gray-100 pt-10 flex flex-col gap-12 items-center w-full">
+    <main className="min-h-screen bg-transparent pt-10 flex flex-col gap-12 items-center w-full">
         <h1 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 px-4 leading-tight max-w-4xl">
           See how quickly your website can pay for itself
         </h1>

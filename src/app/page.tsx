@@ -22,6 +22,7 @@ import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import navensaLogo from 'images/navensaLogo.png'
 import ROICalculatorMini from '@/components/ROICalculatorMini'
+import { Button } from '@/components/Button'
 
 // const clients = [
 //   ['Phobia', logoPhobiaLight],
@@ -188,12 +189,9 @@ export default async function Home() {
             We build student-getting websites for music schools. Want to see if yours could pay for itself?
           </p>  
           <div className='mt-8'>
-            <Link
-              href="/roi-calculator"
-              className="inline-block rounded-lg bg-neutral-950  px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-neutral-800"
-            >
+            <Button href="/roi-calculator">
               Calculate ROI
-            </Link>                      
+            </Button>                      
             <p className="text-md italic text-neutral-600 mt-4">
               See if 2–3 new students would cover your monthly cost.
             </p>   
@@ -220,12 +218,9 @@ export default async function Home() {
             Right now, we’re offering a <strong>3-month free trial</strong> to our first 3 schools — in exchange for honest feedback and a simple case study. After that, the area is closed. Once an area is taken, it’s reserved.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Link
-              href="/availability"
-              className="rounded-md bg-black px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-neutral-800"
-            >
+            <Button href="/availability">
               Check Availability
-            </Link>
+            </Button>
           </div>
           <p className="mt-4 text-sm text-neutral-500">
             Now accepting 3 schools for a <strong>3-month free trial</strong> — limited availability.

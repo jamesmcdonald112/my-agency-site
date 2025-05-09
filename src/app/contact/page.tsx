@@ -67,20 +67,33 @@ function ContactForm() {
             autoComplete="email"
           />
           <TextInput
-            label="Company"
-            name="company"
+            label="School Name (if any)"
+            name="school"
             autoComplete="organization"
           />
           <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
-          <TextInput label="Message" name="message" />
+          <div className="group relative z-0 transition-all focus-within:z-10">
+            <textarea
+              id="message"
+              name="message"
+              placeholder=" "
+              rows={5}
+              className="peer block w-full border border-neutral-300 bg-transparent px-6 pt-12 pb-4 text-base/6 text-neutral-950 ring-4 ring-transparent transition group-first:rounded-t-2xl group-last:rounded-b-2xl focus:border-neutral-950 focus:ring-neutral-950/5 focus:outline-hidden resize-none"
+            />
+            <label
+              htmlFor="message"
+              className="pointer-events-none absolute top-1/2 left-6 -mt-3 origin-left text-base/6 text-neutral-500 transition-all duration-200 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:font-normal peer-placeholder-shown:text-neutral-500 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-neutral-950"
+            >
+              Message
+            </label>
+          </div>
           <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
             <fieldset>
-              <legend className="text-base/6 text-neutral-500">Budget</legend>
+              <legend className="text-base/6 text-neutral-500">What are you most interested in?</legend>
               <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <RadioInput label="$25K – $50K" name="budget" value="25" />
-                <RadioInput label="$50K – $100K" name="budget" value="50" />
-                <RadioInput label="$100K – $150K" name="budget" value="100" />
-                <RadioInput label="More than $150K" name="budget" value="150" />
+                <RadioInput label="Website System Only" name="service" value="website" />
+                <RadioInput label="Website + Ad Campaigns" name="service" value="website-ads" />
+                <RadioInput label="Something else" name="service" value="other" />
               </div>
             </fieldset>
           </div>
@@ -88,6 +101,9 @@ function ContactForm() {
         <Button type="submit" className="mt-10">
           Let’s work together
         </Button>
+        <p className="mt-4 text-sm text-neutral-600">
+          Prefer to chat live? <Link href="/book-a-call" className="text-neutral-950 underline">Book a call here</Link>.
+        </p>
       </form>
     </FadeIn>
   )
@@ -97,14 +113,11 @@ function ContactDetails() {
   return (
     <FadeIn>
       <h2 className="font-display text-base font-semibold text-neutral-950">
-        Our offices
+        Based in Kilkenny — Working with Schools Across Ireland
       </h2>
       <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? We don’t but we have to list our
-        addresses here for legal reasons.
+        You get real support, real replies, and real growth.
       </p>
-
-      <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
 
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
@@ -112,8 +125,8 @@ function ContactDetails() {
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ['Careers', 'careers@studioagency.com'],
-            ['Press', 'press@studioagency.com'],
+            ['General Enquiries', 'hello@youragency.com'],
+            ['Support', 'support@youragency.com'],
           ].map(([label, email]) => (
             <div key={email}>
               <dt className="font-semibold text-neutral-950">{label}</dt>
@@ -152,8 +165,8 @@ export default function Contact() {
         <p>We can’t wait to hear from you.</p>
       </PageIntro>
 
-      <Container className="mt-24 sm:mt-32 lg:mt-40">
-        <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
+      <Container className="mt-12 sm:mt-16 lg:mt-20">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2 items-start">
           <ContactForm />
           <ContactDetails />
         </div>

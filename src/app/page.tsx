@@ -21,6 +21,8 @@ import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import navensaLogo from 'images/navensaLogo.png'
+import ROICalculatorMini from '@/components/ROICalculatorMini'
+
 // const clients = [
 //   ['Phobia', logoPhobiaLight],
 //   ['Phobia', logoPhobiaLight],
@@ -180,21 +182,22 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-7xl">
-            Earn More Money Than You Spend With Us — Or We Won’t Take You On
+            Most Music School Websites Cost You Money. Ours Pays for Itself — Usually With 2–3 New Students.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            <strong>With Navensa, our one goal is to make your business more profitable.</strong><br />
-            We build systems — websites, ads, and automation — that bring more clients, more revenue, and more time to your business.<br />
-            <em>We only take on 3 new clients per month to go deep and deliver real results.</em>
-          </p>
-          <div className="mt-8">
+            We build student-getting websites for music schools. Want to see if yours could pay for itself?
+          </p>  
+          <div className='mt-8'>
             <Link
-              href="/contact"
-              className="inline-block rounded-lg bg-neutral-950 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-neutral-800"
+              href="/roi-calculator"
+              className="inline-block rounded-lg bg-neutral-950  px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-neutral-800"
             >
-              See If You’re Eligible
-            </Link>
-          </div>
+              Calculate ROI
+            </Link>                      
+            <p className="text-md italic text-neutral-600 mt-4">
+              See if 2–3 new students would cover your monthly cost.
+            </p>   
+          </div>         
         </FadeIn>
       </Container>
 
@@ -202,12 +205,35 @@ export default async function Home() {
 
       <CaseStudies caseStudies={caseStudies} /> */}
 
-      <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Navensa' }}
-      >
-        At Navensa, we believe every small business deserves the tools to grow — not just a website, but a complete, automated system designed to deliver real results.
-      </Testimonial>
+      <Container className="relative isolate overflow-hidden rounded-3xl bg-neutral-100 px-6 py-24 sm:py-32 lg:px-8 mt-24 sm:mt-32 lg:mt-40">
+        <FadeIn className="mx-auto max-w-3xl text-center">
+          <h2 className="font-display text-3xl font-semibold text-neutral-900 sm:text-4xl">
+            One School. One Area. More Students.
+          </h2>
+          <p className="mt-6 text-lg leading-8 text-neutral-700">
+            We only work with <strong>one music school per area</strong> — and we’ll never build a second site nearby. Once your area is taken, it’s locked.
+          </p>
+          <p className="mt-4 text-lg leading-8 text-neutral-700">
+            We do this to <strong>protect your results</strong> — so every enquiry in your area comes to you.
+          </p>
+          <p className="mt-4 text-lg leading-8 text-neutral-700">
+            Right now, we’re offering a <strong>3-month free trial</strong> to our first 3 schools — in exchange for honest feedback and a simple case study. After that, the area is closed. Once an area is taken, it’s reserved.
+          </p>
+          <div className="mt-10 flex items-center justify-center gap-x-6">
+            <Link
+              href="/availability"
+              className="rounded-md bg-black px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-neutral-800"
+            >
+              Check Availability
+            </Link>
+          </div>
+          <p className="mt-4 text-sm text-neutral-500">
+            Now accepting 3 schools for a <strong>3-month free trial</strong> — limited availability.
+          </p>
+        </FadeIn>
+      </Container>
+
+      <ROICalculatorMini />
 
       <Services />
 
